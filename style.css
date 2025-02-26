@@ -1,0 +1,227 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a;
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: #111;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: yellow;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    position: relative;
+}
+
+nav ul li a.active, nav ul li a:hover {
+    color: #ffff00;
+    border-bottom: 2px solid yellow;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    color: yellow;
+}
+
+#home {
+    padding: 10px 20px;
+}
+
+.title {
+    font-size: 60px;
+    font-weight: bold;
+    color: yellow;
+}
+
+.subtitle {
+    font-size: 24px;
+    color: #ccc;
+}
+
+.project-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project {
+    background: #222;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+form input, form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+form button {
+    background: yellow;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+footer {
+    padding: auto;
+    background: #111;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Apply the heading color to specific sections */
+/* Project Section */
+#projects {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Container for Projects */
+.project-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* 3D Floating Box Effect */
+.project-box {
+    width: 300px;
+    height: 150px;
+    background: #222;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(255, 255, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    transform: perspective(1000px) rotateY(0deg);
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+/* Hover Effect */
+.project-box:hover {
+    transform: perspective(1000px) rotateY(10deg);
+    box-shadow: 0 15px 30px rgba(255, 165, 0, 0.4); /* Adjust to match theme */
+}
+
+/* Icon Styling */
+.project-box i {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 40px;
+    left: 20px;
+    font-size: 40px;
+    color: yellow; /* Match main icon color */
+}
+
+/* Project Text */
+.project-text {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Change Color on Hover */
+.project-box:hover .project-text {
+    color: #ffff00; /* Match main page color */
+}
+
+/* About Me Section */
+#about {
+    text-align: center;
+    margin: 50px auto;
+    max-width: 800px; /* Keeps the text readable */
+}
+
+/* About Description */
+.about-description {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ddd; /* Adjust for better readability */
+    text-align: center; /* Ensures proper centering */
+    margin: 0 auto; /* Centers the block */
+}
+
+#about p {
+    font-size: 18px;
+    color: #ddd; /* Light gray for readability */
+    line-height: 1.6;
+    max-width: auto;
+    text-align: center;
+    margin-bottom: auto;
+}
+
+footer {
+    background-color: #121212; /* Dark background */
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 15px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social-links img {
+    width: 30px; /* Adjust icon size */
+    height: 30px;
+    filter: brightness(80%); /* Slightly dim by default */
+}
+
+.social-links a:hover {
+    transform: scale(1.2); /* Slight zoom on hover */
+}
+
+.social-links a:hover img {
+    filter: brightness(100%); /* Make it fully bright */
+}
